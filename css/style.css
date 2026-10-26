@@ -299,3 +299,39 @@ h3 { margin: 0 0 8px; font-size: 1.1rem; }
   .card { padding: 24px; }
   .hero__actions .btn { width: 100%; text-align: center; }
 }
+
+/* ===== PÁGINA DE SÓCIOS ===== */
+.page-head { padding: 140px 0 40px; background: linear-gradient(90deg, var(--bg-black) 0%, var(--bg-mid) 60%, #25239a 100%); }
+.page-head h1 { margin: 0 0 16px; font-size: clamp(2rem, 4.4vw, 3.1rem); line-height: 1.15; max-width: 22ch; }
+.page-head h1 em { font-style: normal; color: var(--gold); }
+.partners { padding: 40px 0 clamp(72px, 10vw, 120px); background: linear-gradient(90deg, var(--bg-black) 0%, var(--bg-mid) 60%, #25239a 100%); }
+.partner {
+  display: grid; grid-template-columns: 340px 1fr; gap: clamp(28px, 5vw, 64px);
+  background: linear-gradient(160deg, var(--card) 0%, var(--card-dark) 100%);
+  border: 1px solid var(--line); border-radius: 20px; padding: clamp(24px, 4vw, 48px);
+}
+.partner + .partner { margin-top: 32px; }
+.partner__photo { position: relative; }
+.partner__photo img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 16px; border: 2px solid var(--gold); }
+.partner__badge {
+  margin-top: 18px; padding: 18px 20px; border-radius: 14px; text-align: center;
+  background: rgba(226, 176, 125, 0.08); border: 1px solid var(--line);
+}
+.partner__badge strong { display: block; font-size: 2.2rem; color: var(--gold); line-height: 1.1; }
+.partner__badge span { font-size: 0.82rem; color: var(--muted); }
+.partner__role { margin: 0 0 6px; color: var(--gold); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; }
+.partner h2 { max-width: none; margin-bottom: 22px; }
+.partner__body p { color: var(--muted); margin: 0 0 16px; max-width: 68ch; }
+.tags { list-style: none; margin: 26px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.tags li { padding: 7px 14px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; color: var(--gold-light); border: 1px solid var(--line); background: rgba(226, 176, 125, 0.07); }
+.edu { margin: 30px 0 0; padding-top: 24px; border-top: 1px solid var(--line); display: grid; gap: 10px; }
+.edu h3 { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin: 0; }
+.edu p { margin: 0; color: var(--text); font-size: 0.93rem; }
+.edu small { color: var(--muted); }
+.partner__actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+@media (max-width: 860px) {
+  .partner { grid-template-columns: 1fr; }
+  .partner__photo { max-width: 320px; }
+}
+.partner__badge strong span { font-size: inherit; color: inherit; }
+@media (min-width: 861px) { .partner__photo { align-self: start; position: sticky; top: 96px; } }
