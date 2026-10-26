@@ -335,3 +335,7 @@ h3 { margin: 0 0 8px; font-size: 1.1rem; }
 }
 .partner__badge strong span { font-size: inherit; color: inherit; }
 @media (min-width: 861px) { .partner__photo { align-self: start; position: sticky; top: 96px; } }
+
+/* Sócios dentro da página inicial */
+.partners-list { margin-top: 44px; }
+.partner__body > h3 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); line-height: 1.2; margin: 0 0 22px; }
